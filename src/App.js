@@ -34,8 +34,12 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => {
+  // the mapStateToProps method is executed with each change to the store's state
+  // these are the facts of the case and they are undisputed
   debugger;
   return { items: state.items }
 }
 
 export default connect(mapStateToProps)(App);
+// the actual function name doesn't have to be mapStateToProps, it's just easier and more coherent than 'milkshake' 
+// the return value of mapStateToProps is added to the App's props.
